@@ -5,7 +5,7 @@ const Api_Key = process.env.NEXT_PUBLIC_STRAPI_API_KEY;
 console.log("API Key:", Api_Key);
 
 const axiosClient = axios.create({
-    baseURL: 'http://localhost:1337/api',
+    baseURL: 'https://doctor-appointment-booking-app-backend-5r8h.onrender.com/api',
     headers: {
         'Authorization' : `Bearer ${Api_Key}`
     }
