@@ -48,7 +48,7 @@ function Searchcat() {
                 </Link>
                 )) :
                     [1, 2, 3, 4, 5, 6].map((item, index) => (
-                        <div className='h-[130px] w-[130px] bg-slate-100 animate-pulse rounded-lg m-2'>
+                        <div className='h-[87px] w-[87px] bg-slate-100 animate-pulse rounded-lg m-2'>
   
                         </div>
                 ))
