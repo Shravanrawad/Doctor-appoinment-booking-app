@@ -85,7 +85,7 @@ function Bookappoinment({ doctordata }) {
             <DialogTrigger>
                 <Button className='mt-3 rounded-full'>Book Appointment</Button>
             </DialogTrigger>
-            <DialogContent>
+            <DialogContent className='h-[520px] md:h-[580px] overflow-y-scroll'>
                 <DialogHeader>
                     <DialogTitle>Book Appointment</DialogTitle>
                     <DialogDescription>
