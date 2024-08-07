@@ -22,7 +22,7 @@ function Bookinglist({ bookinglist , expired, updaterecord}) {
   }
 
     return (
-        <div className='relative'>
+        <div className='h-screen relative'>
             {bookinglist && bookinglist.length > 0 ? (
                 bookinglist.map((item, index) => {
                     const imageUrl = item?.attributes?.doctor?.data?.attributes?.image?.data?.attributes?.url;
