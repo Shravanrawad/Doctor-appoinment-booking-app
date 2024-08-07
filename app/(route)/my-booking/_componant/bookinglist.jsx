@@ -44,7 +44,7 @@ function Bookinglist({ bookinglist , expired, updaterecord}) {
                           {!expired && <Cancelcon loading={loading} handelcancel={() => onCancel(item)}/>}
                         </h2>
                         <h2 className='flex gap-2 text-gray-500'><MapPin className='text-primary h-5 w-5'/> {item.attributes.doctor.data.attributes.Address}</h2>
-                        <h2 className='flex gap-2 text-gray-500'><Calendar className='text-primary h-5 w-5'/> Appoinment On: { moment(item.attributes.Date).format('DD-MMM-YYYY')}</h2>
+                        <h2 className='flex gap-2 text-gray-500'><Calendar className='text-primary h-5 w-5'/> On: { moment(item.attributes.Date).format('DD-MMM-YYYY')}</h2>
                         <h2 className='flex gap-2'><Clock className='text-primary h-5 w-5'/> At Time : {item.attributes.Time}</h2>
                       </div>
                   </div>
