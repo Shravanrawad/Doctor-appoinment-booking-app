@@ -27,12 +27,12 @@ function Bookinglist({ bookinglist , expired, updaterecord}) {
                 bookinglist.map((item, index) => {
                     const imageUrl = item?.attributes?.doctor?.data?.attributes?.image?.data?.attributes?.url;
                     return (
-                      <div key={index} className='flex  items-center gap-4 border p-5 mt-4 rounded-lg'>
+                      <div key={index} className='flex items-center gap-4 border p-5 mt-4 rounded-lg'>
                       {imageUrl ? (
                           <Image
                               src={imageUrl}
                               alt='doctor img'
-                              className='rounded-full h-[70px] w-[70px] object-cover'
+                              className='rounded-full h-[70px] w-[70px] object-cover mt-[-30px]'
                               width={100}
                               height={100}
                           />
@@ -45,10 +45,10 @@ function Bookinglist({ bookinglist , expired, updaterecord}) {
                         <h2 className='flex gap-2 text-gray-500'><MapPin className='text-primary h-5 w-5'/> {item.attributes.doctor.data.attributes.Address}</h2>
                         <h2 className='flex gap-2 text-gray-500'><Calendar className='text-primary h-5 w-5'/> On: { moment(item.attributes.Date).format('DD-MMM-YYYY')}</h2>
                         <h2 className='flex gap-2'><Clock className='text-primary h-5 w-5'/> At Time : {item.attributes.Time}</h2>
-                      </div>
-                      <div className='w-full flex justify-end absolute pr-10 mt-[-90px]'> 
-                        {!expired && <Cancelcon  loading={loading} handelcancel={() => onCancel(item)}/>}
+                        <div className='flex w-full justify-end'>
+                          {!expired && <Cancelcon  loading={loading} handelcancel={() => onCancel(item)}/>}
                         </div>
+                      </div>
                   </div>
                     );
                 })
