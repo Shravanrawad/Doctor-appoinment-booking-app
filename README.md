@@ -18,9 +18,9 @@ Demo: https://doctor-appointment-booking-app-indol.vercel.app/
   - Email Sending: Resend, React Email
 
 - **Prerequisites:**
- - Node.js
- - PostgreSQL
- - Strapi CLI
+  - Node.js
+  - PostgreSQL
+  - Strapi CLI
 
 ### Installation
 
