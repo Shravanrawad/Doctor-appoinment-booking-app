@@ -93,7 +93,7 @@ function Bookappoinment({ doctordata }) {
                             <div className='grid grid-cols-1 md:grid-cols-2 mt-5'>
                                 <div className='flex flex-col gap-3 items-baseline'>
                                     <h2 className='flex gap-2 items-center'>
-                                        <CalendarDays className='text-primary h-5 w-5 ml-[-40px] md:ml-0'/>
+                                        <CalendarDays className='text-primary h-5 w-5 ml-[-28px] md:ml-0'/>
                                         Select Date
                                     </h2>
                                     <Calendar
