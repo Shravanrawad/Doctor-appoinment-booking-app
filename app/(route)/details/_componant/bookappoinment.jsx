@@ -101,7 +101,7 @@ function Bookappoinment({ doctordata }) {
                                         selected={date}
                                         disabled={isPastDay}
                                         onSelect={setDate}
-                                        className="rounded-md border ml-10 md:ml-0"
+                                        className="rounded-md border ml-5 md:ml-0"
                                     />
                                 </div>
                                 <div className='mt-3 md:mt-0'>
