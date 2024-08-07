@@ -60,7 +60,7 @@ function Bookappoinment({ doctordata }) {
           setloading(false);
           if (resp) {
             globalapi.sendEmail(data).then(res => { 
-              toast('Booking confirmed. Check your email.');
+              toast('Booking confirmed.');
             }).catch(err => {
               toast('Error sending confirmation email. Please try again.');
             });
