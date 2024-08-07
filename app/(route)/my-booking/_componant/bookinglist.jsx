@@ -41,11 +41,13 @@ function Bookinglist({ bookinglist , expired, updaterecord}) {
                       )}
                       <div className='flex flex-col gap-2 w-full'>
                         <h2 className='font-bold flex justify-between items-center text-[18px]'>{item.attributes.doctor.data.attributes.Name} 
-                          {!expired && <Cancelcon loading={loading} handelcancel={() => onCancel(item)}/>}
                         </h2>
                         <h2 className='flex gap-2 text-gray-500'><MapPin className='text-primary h-5 w-5'/> {item.attributes.doctor.data.attributes.Address}</h2>
                         <h2 className='flex gap-2 text-gray-500'><Calendar className='text-primary h-5 w-5'/> On: { moment(item.attributes.Date).format('DD-MMM-YYYY')}</h2>
                         <h2 className='flex gap-2'><Clock className='text-primary h-5 w-5'/> At Time : {item.attributes.Time}</h2>
+                        <div className='w-full flex justify-end'> 
+                        {!expired && <Cancelcon loading={loading} handelcancel={() => onCancel(item)}/>}
+                        </div>
                       </div>
                   </div>
                     );
