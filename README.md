@@ -9,6 +9,7 @@ Demo: https://doctor-appointment-booking-app-indol.vercel.app/
  - Appointment Booking: Users can book appointments with doctors.
  - User Authentication: Users can sign up and log in using Kinde authentication.
  - Manage Bookings: Users can view and cancel their bookings.
+ - Cloudinary: Image storage management 
  - Confirmation Emails: Appointment confirmation emails are sent to users.
 
 - **Technologies Used:**
