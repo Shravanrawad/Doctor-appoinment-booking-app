@@ -2,7 +2,7 @@
 
 The Doctor Appointment Booking App enables users to browse doctors by category, book appointments, and manage their bookings. Users can sign up, log in, view their bookings, and cancel appointments with ease.
 
-Demo: https://vercel.com/shravanrawads-projects/foodie-cart/A4FNUfPznLketsaVDMqZHux3WreH
+Demo: https://doctor-appointment-booking-app-indol.vercel.app/
 
 ## Features
 
